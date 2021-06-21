@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* ID 선택자 */
-        #container {
-            width: 100%;
-            font-size: 15pt;
+        /* 인접형제 선택자 */
+        /* h1+ul {
+            background: aqua;
+        } */
+        /* 일반 형제 선택자 */
+        h1~ul {
+            background: beige;
         }
     </style>
 
@@ -19,7 +22,18 @@
 </head>
 
 <body>
-    <div id="container">class 선택자</div>
+    <section>
+        <ul>
+            <li>ㅎㅇㅎㅇ</li>
+        </ul>
+        <h1>ㄹㅇ</h1>
+        <ul>
+            <li>ㅂ2ㅂ2</li>
+        </ul>
+        <ul>
+            <li>ㅎㅎㅋㅋ</li>
+        </ul>
+    </section>
 
 </body>
 
