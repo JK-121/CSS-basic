@@ -34,11 +34,35 @@
             width: 700px;
             height: 750px;
             color: rgb(177, 175, 175);
+            overflow: auto;
+            -ms-overflow-style: none;
         }
+
+        .box2::-webkit-scrollbar {
+            display: none;
+        }
+
 
         img {
             display: block;
             margin: auto;
+        }
+
+        /* 하이퍼링크 원래 색상 유지 */
+        a:visited {
+            color: inherit;
+        }
+
+        .dt {
+            position: relative;
+            bottom: 20px;
+            padding-left: 10px;
+        }
+
+        ul {
+            font-size: 20px;
+            position: relative;
+            bottom: 20px;
         }
     </style>
 </head>
@@ -66,10 +90,13 @@
             <br>
             <br>
             <br>
-            <div>
-                <i class="fab fa-instagram" style="padding-left: 20px; font-size: 40px; color: white;"></i>
-                <i class="fab fa-facebook-square" style="padding-left: 8px; font-size: 40px; color: white;"></i>
-                <i class="fab fa-twitter" style="padding-left: 8px; font-size: 40px; color: white;"></i>
+            <div style="position: relative; top:10px;">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"
+                        style="padding-left: 20px; font-size: 40px; color: white;"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"
+                        style="padding-left: 8px; font-size: 40px; color: white;"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"
+                        style="padding-left: 8px; font-size: 40px; color: white;"></i></a>
             </div>
         </div>
 
@@ -81,32 +108,54 @@
                 style="font-size: 30px; position: relative; bottom:50px; left:15px; border-bottom: 2px solid gainsboro; width:95%;">
                 <i class="far fa-user-circle"></i>&nbsp Profile<p>
                     <div style="position: relative; bottom:50px;">
-                        <ul style="font-size: 20px;">
-                            <li>경희대학교 경영학과 졸업</li><br>
-                            <li>블록체인 비즈니스모델 교육과정 수료</li>
+                        <details open>
+                            <summary class="dt">
+                                Details
+                            </summary>
+                            <ul>
+                                <a href="https://kbiz.khu.ac.kr" target="_blank" style="text-decoration: none;">
+                                    <li>경희대학교 경영학과 졸업</li><br>
+                                </a>
+                                <li>블록체인 비즈니스모델 교육과정 수료</li>
 
-                        </ul>
+                            </ul>
+                        </details>
                     </div>
-                    <br>
+
                     <p
                         style="font-size: 30px; position: relative; bottom:50px; left:15px; border-bottom: 2px solid gainsboro; width:95%;">
                         <i class="far fa-building"></i>&nbsp Work Experience<p>
                             <div style="position: relative; bottom:50px;">
-                                <ul style="font-size: 20px;">
-                                    <li>(주)XXXX 근무 (201X - 201X)</li><br>
-                                    <li>(주)XXXX 근무 (201X - 202X)</li>
-                                </ul>
+                                <details open>
+                                    <summary class="dt">
+                                        Details
+                                    </summary>
+                                    <ul>
+                                        <a href="https://samsungsds.com" target="_blank" style="text-decoration: none;">
+                                            <li>(주)XXXX 근무 (201X - 201X)</li>
+                                        </a><br>
+                                        <a href="https://lgcns.co.kr" target="_blank" style="text-decoration: none;">
+                                            <li>(주)XXXX 근무 (201X - 202X)</li>
+                                        </a>
+                                    </ul>
+                                </details>
                             </div>
-                            <br>
+
                             <p
                                 style="font-size: 30px; position: relative; bottom:50px; left:15px; border-bottom: 2px solid gainsboro; width:95%;">
                                 <i class="fas fa-tasks"></i>&nbsp Skills<p>
                                     <div style="position: relative; bottom:50px;">
-                                        <ul style="font-size: 20px;">
-                                            <li>HTML</li><br>
-                                            <li>CSS</li><br>
-                                            <li>JAVA SCRIPT</li>
-                                        </ul>
+                                        <details open>
+                                            <summary class="dt">
+                                                Details
+                                            </summary>
+                                            <ul>
+                                                <li>HTML</li><br>
+                                                <li>CSS</li><br>
+                                                <li>JAVA SCRIPT</li><br>
+                                                <li>SOLIDITY</li>
+                                            </ul>
+                                        </details>
                                     </div>
 
         </div>
